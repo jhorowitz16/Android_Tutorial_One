@@ -9,6 +9,7 @@ package com.example.joshua.caloriecounter;
         import android.view.View.OnClickListener;
         import android.widget.ArrayAdapter;
         import android.widget.Button;
+        import android.widget.EditText;
         import android.widget.Spinner;
         import android.widget.Toast;
 
@@ -20,6 +21,7 @@ package com.example.joshua.caloriecounter;
 public class CalorieConverter extends Activity {
 
     private Spinner spinner1, spinner2;
+    private EditText exerciseCount;
     private Button btnSubmit;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -63,6 +65,7 @@ public class CalorieConverter extends Activity {
     public void addListenerOnButton() {
 
         spinner1 = (Spinner) findViewById(R.id.spinner1);
+        exerciseCount = (EditText) findViewById(R.id.exerciseCount);
         spinner2 = (Spinner) findViewById(R.id.spinner2);
         btnSubmit = (Button) findViewById(R.id.btnSubmit);
 
@@ -74,6 +77,7 @@ public class CalorieConverter extends Activity {
                 Toast.makeText(CalorieConverter.this,
                         "OnClickListener : " +
                                 "\nSpinner 1 : " + String.valueOf(spinner1.getSelectedItem()) +
+                                "\nExercise Count : " + String.valueOf(exerciseCount.getText()) +
                                 "\nSpinner 2 : " + String.valueOf(spinner2.getSelectedItem()),
                         Toast.LENGTH_SHORT).show();
             }

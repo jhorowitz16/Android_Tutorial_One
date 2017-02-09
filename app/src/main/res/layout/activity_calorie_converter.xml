@@ -4,6 +4,16 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
+    <TextView
+        android:text="Exercises to Calories"
+        android:layout_width="match_parent"
+        android:id="@+id/textView"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textAlignment="viewStart"
+        android:lineSpacingExtra="8sp"
+        android:singleLine="false" />
+
     <Spinner
         android:id="@+id/spinner1"
         android:layout_width="match_parent"
@@ -11,15 +21,35 @@
         android:entries="@array/country_arrays"
         android:prompt="@string/country_prompt" />
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/exerciseCount" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert" />
+
+    <TextView
+        android:text="Calories to exercises"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="24sp" />
+
     <Spinner
         android:id="@+id/spinner2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <Button
-        android:id="@+id/btnSubmit"
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit" />
+        android:text="Convert" />
 
 </LinearLayout>
