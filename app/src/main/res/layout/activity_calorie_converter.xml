@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:layout_weight="0.09" />
 
     <TextView
         android:text="Exercises to Calories"
@@ -12,7 +20,8 @@
         android:textSize="24sp"
         android:textAlignment="viewStart"
         android:lineSpacingExtra="8sp"
-        android:singleLine="false" />
+        android:singleLine="false"
+        android:layout_weight="0.16" />
 
     <Spinner
         android:id="@+id/spinner1"
@@ -26,7 +35,20 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:id="@+id/exerciseCount" />
+        android:id="@+id/exerciseCount"
+        android:textSize="18sp"
+        android:lineSpacingExtra="18sp"
+        android:contentDescription="Enter Reps/Minutes"
+        tools:backgroundTint="@drawable/common_full_open_on_phone" />
+
+    <TextView
+        android:text="Total Calories: 0.0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/calorieDisplay"
+        android:textSize="24sp"
+        android:lineSpacingExtra="18sp"
+        android:layout_weight="0.12" />
 
     <Button
         android:id="@+id/btnSubmit"
@@ -35,21 +57,50 @@
         android:text="Convert" />
 
     <TextView
-        android:text="Calories to exercises"
+        android:text="Equivalency"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView2"
         android:textSize="24sp" />
 
-    <Spinner
-        android:id="@+id/spinner2"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Convert" />
+        android:id="@+id/pushupEquiv"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:text="Pushups (reps): 0.0" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/situpEquiv"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:text="Situps (reps): 0.0" />
+
+    <TextView
+        android:text="Jumping Jacks (min): 0.0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/jumpingEquiv"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="Jogging (min): 0.0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/joggingEquiv"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:textSize="18sp" />
 
 </LinearLayout>

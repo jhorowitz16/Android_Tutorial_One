@@ -4,18 +4,18 @@
     <string name="country_prompt">Choose a country</string>
 
     <string-array name="country_arrays">
-        <item>Pushups</item>
-        <item>Situps</item>
-        <item>Squats</item>
-        <item>Leg-lifts</item>
-        <item>Planks</item>
-        <item>Jumping Jacks</item>
-        <item>Pullups</item>
-        <item>Cycling</item>
-        <item>Walking</item>
-        <item>Jogging</item>
-        <item>Swimming</item>
-        <item>Stair-Climbing</item>
+        <item>Pushups (reps)</item>
+        <item>Situps (reps)</item>
+        <item>Squats (reps)</item>
+        <item>Leg-lifts (min)</item>
+        <item>Planks (min)</item>
+        <item>Jumping Jacks (reps)</item>
+        <item>Pullups (reps)</item>
+        <item>Cycling (min)</item>
+        <item>Walking (min)</item>
+        <item>Jogging (min)</item>
+        <item>Swimming (min)</item>
+        <item>Stair-Climbing (min)</item>
     </string-array>
 
 </resources>
